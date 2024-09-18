@@ -59,7 +59,7 @@ const projects = [
   }
   
   function displayProjects() {
-    const recentProjectsDiv = document.getElementById("recent-projects");
+    const recentProjectsDiv = document.getElementById("projects");
     recentProjectsDiv.innerHTML = ""; // Clear the section before appending
   
     for (let i = 0; i < displayedProjects; i++) {
