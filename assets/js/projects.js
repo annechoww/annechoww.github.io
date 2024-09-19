@@ -35,6 +35,18 @@ const projects = [
         "Implemented a help button as a guide",
         "Find feature to identify destinations and provide descriptions"
       ]
+    },
+    {
+      title: "Test",
+      date: new Date('January 1, 2022'),
+      description: "Testing date.",
+      imgSrc: "/assets/img/safewaze.png",
+      accomplishments: [
+        "Tools: C++, OSM, OpenGL",
+        "Users can view a diagram of crime rates in neighborhoods",
+        "Implemented a help button as a guide",
+        "Find feature to identify destinations and provide descriptions"
+      ]
     }
   ];
 
