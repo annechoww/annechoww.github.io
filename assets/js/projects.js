@@ -2,7 +2,7 @@ const projects = [
     {
       title: "Augmented Reality Education Platform",
       description: "A web-based AR tool for educators to easily create programming content.",
-      imgSrc: "/assets/img/project-music-player.png",
+      imgSrc: "/assets/img/ar_image.jpg",
       accomplishments: [
         "Tools: A-frame, HTML/CSS, Javascript, Three.js",
         "Extensive 2D & 3D asset library",
@@ -60,7 +60,7 @@ const projects = [
   
   function displayProjects() {
     const recentProjectsDiv = document.getElementById("recent-projects");
-    recentProjectsDiv.innerHTML = ""; // Clear the section before appending
+    recentProjectsDiv.innerHTML = "";
   
     for (let i = 0; i < displayedProjects; i++) {
       recentProjectsDiv.innerHTML += generateProjectHTML(projects[i]);
