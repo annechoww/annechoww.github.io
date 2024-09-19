@@ -1,6 +1,7 @@
 const projects = [
     {
       title: "Augmented Reality Education Platform",
+      date: new Date('May 1, 2024'),
       description: "A web-based AR tool for educators to easily create programming content.",
       imgSrc: "/assets/img/ar_image.jpg",
       accomplishments: [
@@ -13,6 +14,7 @@ const projects = [
     },
     {
       title: "Moodlist",
+      date: new Date('September 1, 2022'),
       description: "A deep learning software that determines a person's mood based on their music listening history.",
       imgSrc: "/assets/img/moodlist.png",
       accomplishments: [
@@ -24,6 +26,7 @@ const projects = [
     },
     {
       title: "Safewaze",
+      date: new Date('January 1, 2021'),
       description: "A map to provide users with information on the safest path to their destination.",
       imgSrc: "/assets/img/safewaze.png",
       accomplishments: [
@@ -34,6 +37,12 @@ const projects = [
       ]
     }
   ];
+
+  function sortProjectsByDate(projects) {
+    return projects.sort((a, b) => b.date - a.date);
+  }
+
+  const sortedProjects = sortProjectsByDate(projects);
 
   let displayedProjects = 1;
   
@@ -63,7 +72,7 @@ const projects = [
     recentProjectsDiv.innerHTML = "";
   
     for (let i = 0; i < displayedProjects; i++) {
-      recentProjectsDiv.innerHTML += generateProjectHTML(projects[i]);
+      recentProjectsDiv.innerHTML += generateProjectHTML(sortedProjects[i]);
     }
   }
   
